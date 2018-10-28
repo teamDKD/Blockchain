@@ -9,12 +9,14 @@
 using namespace std;
 
 FILE * stream = fopen("Blocks/Block.txt", "wt");
+//FILE * LogFile = fopen("Log/log.txt", "r+");
 
 char* PreviousHash();
 char* Address_P();
 char* Address_H();
 char* HeaderHash(char* _merkletree, char* _previoushash,char* _address_p,char* _address_h);
 void makeBody();
+void recordlog();
 
 //class block {
 //private:
@@ -44,6 +46,7 @@ int main() {
 	char* Final_Address_H = Address_H();
 	char* Final_HeaderHash = HeaderHash(Final_Merkle_Tree, Final_Previous_Hash,Final_Address_P,Final_Address_H);
 	makeBody();
+	recordlog();
 
 	//block block(Final_Merkle_Tree, Final_Previous_Hash, Final_Address_P, Final_Address_H, Final_HeaderHash);
 
@@ -141,6 +144,14 @@ void makeBody() {
 
 }
 
+//void recordlog() {
+//	char info[2];
+//	char* number = fgets(info,sizeof(info),LogFile);
+//	cout << number;
+//	int nonce = atoi(number);
+//	fprintf(LogFile, "%d",nonce+1);
+//	fclose(LogFile);
+//}
 //void block::makeBlock() {
 //	FILE * stream = fopen("Block.txt", "wt");
 //	

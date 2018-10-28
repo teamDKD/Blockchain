@@ -1,5 +1,5 @@
 ﻿  Test_Main.cpp
-c:\users\vorox\desktop\blockchain\blockchain\test_main.cpp(104): warning C4172: 지역 변수 또는 임시: address_p의 주소를 반환하고 있습니다.
-c:\users\vorox\desktop\blockchain\blockchain\test_main.cpp(94): warning C4172: 지역 변수 또는 임시: _previousHash의 주소를 반환하고 있습니다.
-c:\users\vorox\desktop\blockchain\blockchain\test_main.cpp(114): warning C4172: 지역 변수 또는 임시: address_h의 주소를 반환하고 있습니다.
+c:\users\vorox\desktop\blockchain\blockchain\test_main.cpp(97): warning C4172: 지역 변수 또는 임시: _previousHash의 주소를 반환하고 있습니다.
+c:\users\vorox\desktop\blockchain\blockchain\test_main.cpp(107): warning C4172: 지역 변수 또는 임시: address_p의 주소를 반환하고 있습니다.
+c:\users\vorox\desktop\blockchain\blockchain\test_main.cpp(117): warning C4172: 지역 변수 또는 임시: address_h의 주소를 반환하고 있습니다.
   BlockChain.vcxproj -> C:\Users\vorox\Desktop\BlockChain\Debug\BlockChain.exe
